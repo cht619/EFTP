@@ -1,0 +1,31 @@
+2024/10/02 16:16:26 - mmengine - ERROR - /home/softengine/anaconda3/envs/mmseg/lib/python3.9/site-packages/mmengine/logging/logger.py - print_log - 350 - per class results:
+2024/10/02 16:16:26 - mmengine - ERROR - /home/softengine/anaconda3/envs/mmseg/lib/python3.9/site-packages/mmengine/logging/logger.py - print_log - 350 - 
++---------------+-------+-------+
+|     Class     |  IoU  |  Acc  |
++---------------+-------+-------+
+|      road     | 87.29 | 94.54 |
+|    sidewalk   | 63.62 | 79.51 |
+|    building   | 89.87 | 95.59 |
+|      wall     | 51.48 | 63.69 |
+|     fence     |  54.2 | 73.26 |
+|      pole     | 62.57 | 70.66 |
+| traffic light | 73.95 | 83.68 |
+|  traffic sign | 70.52 | 79.24 |
+|   vegetation  | 86.04 | 91.94 |
+|    terrain    |  8.74 | 10.03 |
+|      sky      | 97.68 | 98.98 |
+|     person    | 68.53 | 82.35 |
+|     rider     | 52.72 |  71.6 |
+|      car      | 89.16 | 95.72 |
+|     truck     | 63.12 | 65.96 |
+|      bus      | 59.69 | 85.02 |
+|     train     | 87.49 | 91.55 |
+|   motorcycle  | 45.05 | 52.41 |
+|    bicycle    | 54.25 | 69.32 |
++---------------+-------+-------+
+2024/10/02 16:16:26 - mmengine - ERROR - /home/softengine/anaconda3/envs/mmseg/lib/python3.9/site-packages/mmengine/logging/logger.py - print_log - 350 - 
++-------+-------+-------+
+|  aAcc |  mIoU |  mAcc |
++-------+-------+-------+
+| 92.75 | 66.63 | 76.58 |
++-------+-------+-------+
