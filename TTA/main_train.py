@@ -1,10 +1,10 @@
-from mmseg.apis.baselines.fl_seg_baselines import ModelMerging
+from mmseg.apis.baselines.fl_seg_baselines import EFTP
 
 
 def refine_baseline(cfg):
     cfg.checkpoint = './checkpoints/FedSeg/{}/model.pth'.format(str.lower(cfg.domain))
     if any(s in cfg.baseline for s in ['FedSeg_TTA', 'ModelMerging']):
-        cfg.model.backbone.type = 'mit_b5_daformer_EVP'  # 为了实现model merging，需要用旧的
+        cfg.model.backbone.type = 'mit_b5_daformer_EVP'
         cfg.checkpoint = './checkpoints/FedSeg_Prompt/{}/model_old.pth'.format(
             str.lower(cfg.domain))
 
@@ -35,6 +35,6 @@ def refine_cfg(cfg):
 def build_solver(baseline):
     print('baseline is:', baseline)
     solver_dicts = {
-        'ModelMerging': ModelMerging
+        'ModelMerging': EFTP
         }
     return solver_dicts[baseline]
