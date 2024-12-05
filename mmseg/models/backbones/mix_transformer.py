@@ -542,13 +542,13 @@ class DAFormer_EVP(MixVisionTransformer_DAFormer):
 
 
 @MODELS.register_module()
-class mit_b5_daformer_EVP(DAFormer_EVP):
+class mit_b5_daformer_ours(DAFormer_EVP):
 
     def __init__(self, **kwargs):
         for k in ['patch_size', 'embed_dims', 'num_heads', 'mlp_ratios', 'qkv_bias', 'norm_layer', 'depths', 'sr_ratios']:
             if k in kwargs.keys():
                 kwargs.pop(k)
-        super(mit_b5_daformer_EVP, self).__init__(
+        super(mit_b5_daformer_ours, self).__init__(
             patch_size=4,
             embed_dims=[64, 128, 320, 512],
             num_heads=[1, 2, 5, 8],

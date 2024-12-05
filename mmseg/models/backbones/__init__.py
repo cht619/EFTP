@@ -6,7 +6,7 @@ from .vit import VisionTransformer
 from .mit import MixVisionTransformer, MiT_VPT, MiT_VPT_dense, MiT_VPT_sparse, MiT_UniVPT
 from .mit_prompt import mit_b5_prompt
 from .mit_adapter import MiT_EVP, MiT_EVP_low_high
-from .mix_transformer import MixVisionTransformer_DAFormer, mit_b5_daformer, mit_b5_daformer_EVP, daformer_vpt
+from .mix_transformer import MixVisionTransformer_DAFormer, mit_b5_daformer, mit_b5_daformer_ours, daformer_vpt
 
 __all__ = [
     'VisionTransformer', 'SwinTransformer', 'MixVisionTransformer',
@@ -20,6 +20,6 @@ __all__ = [
     'MiT_EVP_low_high',
     'MixVisionTransformer_DAFormer',
     'mit_b5_daformer',
-    'mit_b5_daformer_EVP',
+    'mit_b5_daformer_ours',
     'daformer_vpt',
 ]

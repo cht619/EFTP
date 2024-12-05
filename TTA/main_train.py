@@ -4,7 +4,7 @@ from mmseg.apis.baselines.fl_seg_baselines import EFTP
 def refine_baseline(cfg):
     cfg.checkpoint = './checkpoints/FedSeg/{}/model.pth'.format(str.lower(cfg.domain))
     if any(s in cfg.baseline for s in ['FedSeg_TTA', 'ModelMerging']):
-        cfg.model.backbone.type = 'mit_b5_daformer_EVP'
+        cfg.model.backbone.type = 'mit_b5_daformer_ours'
         cfg.checkpoint = './checkpoints/FedSeg_Prompt/{}/model_old.pth'.format(
             str.lower(cfg.domain))
 
